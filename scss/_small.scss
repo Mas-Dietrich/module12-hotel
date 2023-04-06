@@ -1,0 +1,119 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+
+/*----------- BODY --------------*/
+body {
+    font-size: 16px;
+}
+
+
+/*----------- HEADER --------------*/
+header {
+    padding: .5rem 2%;
+    background-color: #655035;
+    color: white;
+    font-size: .75rem;
+}
+header h1 {margin: 0; text-align: center; font-family: $headerFont;}
+
+/*----------- NAVIGATION --------------*/
+nav {
+    background-color: #655035;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 999;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+nav ul li {
+    flex-basis: 33.3%;
+}
+nav ul li a {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    background-color: #655035;
+    color: #eee;
+    border-left: 1px solid #777;
+    padding: .5rem 0;
+    text-decoration: none;
+    font-size: .9rem;
+    text-align: center;
+}
+
+nav ul li a i {
+    display: block;
+    font-size: 1.25rem;
+}
+nav ul li:first-child a {border-left: none;}
+
+nav ul li a:hover {
+    background-color: #eee;
+    color: #333;
+}
+nav ul li.active a {
+    background-color: darken(#655035, 10%);
+    color: #fff;
+}
+/*----------- MAIN --------------*/
+main {
+    padding: 0 2%;
+    min-height: 10rem;
+
+    h1 {font-family: $headerFont; font-weight: 700;}
+}
+
+div#myCards{
+    display: grid;
+    grid-template-columns: 1fr;
+
+    figure {
+        margin: 0;
+        width: 100%;
+        position: relative;
+        img {width: 100%;}
+        figcaption{
+            position: absolute; 
+            bottom: 0; 
+            background-color: rgba(255,255,255,0.5);
+            width: 100%;
+            padding: .5rem 2vw;
+            font-family: $infoFont;
+        }
+    }
+
+    div.infoColumns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: #84b4dc;
+        margin-bottom: 1vh;
+
+    }
+
+    div.infoColumns span i {
+        float: left;
+        padding-left: .5rem;
+        font-size: 1.5rem;
+    }
+
+    div.infoColumns span p {
+        padding-left: 1.5rem;
+    }
+}
+
+
+/*----------- FOOTER --------------*/
+footer {
+    background-color: #ddd;
+    padding: .5rem 2%;
+    text-align: center;
+}

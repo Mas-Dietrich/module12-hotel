@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="description" content="Module 12 in DGM2740, utilizing a JSON file to grab hotel data and display it using javascript, use bottom screen navigation, get icons from Ionicons, use CSS grid and Fixed Position">
+<meta name="author" content="Mason Dietrich">
+
+<!-- This start file was build by Paul Cheney  -->
+<title>Module 12- Hotel</title>
+
+<!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- Ionicons stylesheet -->
+<link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+<!--Google Fonts-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&family=Poppins&display=swap" rel="stylesheet">
+
+
+
+<!-- STYLE SHEETS -->
+<link href="css/styles.css" rel="stylesheet">
+
+
+
+     
+</head>
+<body>
+<!-- HEADER HERE -->
+	<header>
+ 		<h1>Westwind Hotel and Suites</h1>
+    </header>
+    
+    
+<!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <ul >
+            <li><a href="#"><i class="icon ion-md-bookmarks"></i><span>Reservation</span></a></li>
+            <li><a href="#"><i class="icon ion-md-bed"></i><span>Rooms</span></a></li>
+            <li class="active"><a href="#"><i class="icon ion-md-pin"></i><span>Locations</span></a></li>    
+        </ul>
+    </nav>
+    
+    
+<!-- CONTENT HERE -->
+    <main>
+        <h1>Locations</h1>
+
+        <div id="myCards"></div>
+    </main>
+
+<!-- FOOTER HERE -->   
+    <footer>
+        &copy; 2023 &bull; Maosn Dietrich &bull; DGM2740
+    </footer>
+<script src="js/scripts.js"></script>
+</body>
+</html>
