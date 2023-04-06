@@ -19,8 +19,13 @@
 
 /*----------- MAIN --------------*/
 main {
+    h1 {margin-left: 2%;}
     div#myCards{
         grid-template-columns: 1fr 1fr;
+        
+        div.inventoryWrapper {
+            margin: 0 2%;
+        }
     }
 }
 

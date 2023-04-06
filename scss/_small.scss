@@ -96,6 +96,8 @@ div#myCards{
         grid-template-columns: 1fr 1fr;
         background-color: #84b4dc;
         margin-bottom: 1vh;
+        border-bottom-left-radius: 4px;
+        border-bottom-right-radius: 4px;
 
     }
 
@@ -107,6 +109,7 @@ div#myCards{
 
     div.infoColumns span p {
         padding-left: 1.5rem;
+        text-align: center;
     }
 }
 

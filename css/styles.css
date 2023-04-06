@@ -425,6 +425,8 @@ div#myCards div.infoColumns {
   grid-template-columns: 1fr 1fr;
   background-color: #84b4dc;
   margin-bottom: 1vh;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
 }
 div#myCards div.infoColumns span i {
   float: left;
@@ -433,6 +435,7 @@ div#myCards div.infoColumns span i {
 }
 div#myCards div.infoColumns span p {
   padding-left: 1.5rem;
+  text-align: center;
 }
 
 /*----------- FOOTER --------------*/
@@ -462,8 +465,14 @@ footer {
     padding: 0.5rem 1rem;
   }
   /*----------- MAIN --------------*/
+  main h1 {
+    margin-left: 2%;
+  }
   main div#myCards {
     grid-template-columns: 1fr 1fr;
+  }
+  main div#myCards div.inventoryWrapper {
+    margin: 0 2%;
   }
   /*----------- FOOTER --------------*/
 } /* end of media query */
